@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-plus: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-green: #009B5A; /* Primary Digdaya Green */
+  --color-brand-lightgreen: #009F5D; /* Light Minty Green highlighted */
+  --color-brand-deepgreen: #006B45; /* Deep Green Highlight */
+  --color-brand-darkgreen: #003D2B; /* Dark Green / Slate Dark Green */
+  --color-brand-softgreen: #EAF8F1; /* Soft Green Background or Pill active */
+  --color-brand-mint: #F4FBF7; /* Light Mint tint */
+  --color-brand-gold: #C8A951; /* Premium subtle Gold */
+  --color-brand-warm: #F8FAF7; /* Standard off-white for the body grid background */
+  --color-brand-border: #E5EDE8; /* Subtle border for clean separation */
+  --color-brand-text-primary: #1F2933; /* Elegant navyish primary text */
+  --color-brand-text-secondary: #667085; /* Grayish green secondary text */
+}
+
+/* Custom background pattern to give a very subtle Islamic / classic geometric touch */
+.pattern-gold-glow {
+  background-image: radial-gradient(circle at 100% 0%, rgba(0, 155, 90, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 0% 100%, rgba(200, 169, 81, 0.03) 0%, transparent 50%);
+  background-color: #FFFFFF;
+}
+
+/* Clean, modern geometric grid overlay for high-end feel */
+.grid-overlay {
+  background-image: linear-gradient(rgba(229, 237, 232, 0.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(229, 237, 232, 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Digdaya Elegant Wave or Leaf styling */
+.digdaya-gradient {
+  background: linear-gradient(135deg, #009B5A 0%, #006B45 50%, #003D2B 100%);
+}
+
+.ornament-border {
+  position: relative;
+}
+
+.ornament-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-brand-gold) 50%, transparent);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A951;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #009B5A;
+}
+
+
